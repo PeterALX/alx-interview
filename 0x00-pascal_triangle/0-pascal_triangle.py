@@ -18,8 +18,7 @@ def coefficient(n, k):
     """
     return the binomial coefficient(n, k)
     # """
-    # k = min(k, n - k)
-    return int(factorial(n) // (factorial(k) * factorial(n - k)))
+    return factorial(n) // (factorial(k) * factorial(n - k))
 
 
 def pascal_triangle(n):
