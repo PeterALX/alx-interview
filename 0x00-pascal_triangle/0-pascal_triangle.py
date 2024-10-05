@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-from math import factorial
 
+def factorial(n):
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
 def coefficient(n, k):
-	return int(factorial(n) / (factorial(k) * factorial(n - k)))
+    return int(factorial(n) / (factorial(k) * factorial(n - k)))
 def pascal_triangle(n):
     triangle = []
     for i in range(n):
