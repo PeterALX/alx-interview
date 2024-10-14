@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+'''solution for lockboxes puzzle'''
+
 def open_box(key, unlocked, boxes):
     for key in boxes[key]:
         if (key not in unlocked and len(unlocked) < len(boxes)):
