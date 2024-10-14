@@ -14,10 +14,10 @@ def open_box(key, unlocked, boxes):
     '''
     toUnlock = set()
     for key in boxes[key]:
-        if (key in unlocked):
-            continue
         if (len(unlocked) >= len(boxes)):
             break
+        if (key in unlocked):
+            continue
         if key < 0 or key >= len(boxes):
             continue
         unlocked.add(key)
