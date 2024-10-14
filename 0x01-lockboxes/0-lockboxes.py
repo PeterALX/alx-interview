@@ -17,7 +17,7 @@ def open_box(key, unlocked, boxes):
         if (key in unlocked):
             continue
         if (len(unlocked) >= len(boxes)):
-            continue
+            break
         if key < 0 or key >= len(boxes):
             continue
         unlocked.add(key)
