@@ -2,9 +2,12 @@
 
 '''solution for lockboxes puzzle'''
 
+
 def open_box(key, unlocked, boxes):
     for key in boxes[key]:
-        if (key not in unlocked and len(unlocked) < len(boxes)):
+        if (key not in unlocked
+                and len(unlocked) < len(boxes)
+                and 0 <= key < len(boxes)):
             unlocked.add(key)
             open_box(key, unlocked, boxes)
         else:
